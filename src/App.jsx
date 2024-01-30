@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
-import { TodosProvider } from './context/TodosContext';
 
 import TodosContainer from './features/todo/TodosContainer';
-import FormContainer from './features/form/FormContainer';
 import Heading from './ui/Heading';
 
-const StyledAppLayout = styled.div`
+const StyledAppLayout = styled.main`
   height: 100dvh;
   padding-top: 10rem;
   display: flex;
@@ -16,21 +14,20 @@ const StyledAppLayout = styled.div`
   gap: 1.5rem;
 
   @media (max-width: 768px) {
-    padding-top: 5rem;
+    padding: 5rem 0 2.5rem;
     gap: 3rem;
   }
 `;
 
 function App() {
   return (
-    <TodosProvider>
+    <>
       <GlobalStyles />
       <StyledAppLayout>
         <Heading />
         <TodosContainer />
-        <FormContainer />
       </StyledAppLayout>
-    </TodosProvider>
+    </>
   );
 }
 

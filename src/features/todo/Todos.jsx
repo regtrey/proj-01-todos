@@ -1,27 +1,27 @@
 import styled from 'styled-components';
+import { memo } from 'react';
 
-const StyledTodos = styled.div`
-  min-height: 8rem;
-  width: 100%;
-  background-color: var(--color-brand-50);
-  color: var(--color-brand-400);
+const StyledTodosContainer = styled.div`
+  min-height: max-content;
+  max-height: 33.5rem;
+  width: 100rem;
   border-radius: 12px;
-  padding: 0 3.5rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 2.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  overflow: scroll;
 
   @media (max-width: 768px) {
-    min-height: 10rem;
+    max-height: 33rem;
+    width: 90vw;
     border-radius: 8px;
-    padding: 2rem 1.5rem;
-    font-size: 2rem;
+    gap: 1.5rem;
   }
 `;
 
-function Todos({ children }) {
-  return <StyledTodos>{children}</StyledTodos>;
-}
+const Todos = memo(function Todos({ todos, render }) {
+  return <StyledTodosContainer>{todos.map(render)}</StyledTodosContainer>;
+});
 
 export default Todos;

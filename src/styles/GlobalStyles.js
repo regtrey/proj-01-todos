@@ -46,15 +46,15 @@ const GlobalStyles = createGlobalStyle`
         transition: all 0.5s;
     }
 
-    button:focus {
+    button:focus, input:focus {
       outline: 2px solid var(--color-brand-500);
       outline-offset: 1.5px;
     }
 
-    input:focus {
+    /* input:focus {
       outline: 2px solid var(--color-grey-500);
       outline-offset: 1.5px;
-    }
+    } */
 
     button:has(svg):focus {
         outline: none;

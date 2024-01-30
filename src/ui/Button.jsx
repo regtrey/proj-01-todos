@@ -21,7 +21,7 @@ const types = {
 
     &:hover {
       background-color: var(--color-brand-400);
-      color: var(--color-brand-500);
+      color: var(--color-brand-600);
     }
 
     @media (max-width: 768px) {
