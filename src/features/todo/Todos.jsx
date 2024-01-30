@@ -10,7 +10,7 @@ const StyledTodosContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.5rem;
-  overflow: scroll;
+  overflow-y: scroll;
 
   @media (max-width: 768px) {
     max-height: 33rem;
