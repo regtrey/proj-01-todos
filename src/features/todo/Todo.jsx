@@ -17,7 +17,8 @@ const StyledTodo = styled.div`
     border-radius: 8px;
     padding: 2rem 1.5rem;
     font-size: 2rem;
-    hyphens: auto;
+    hyphens: manual;
+    overflow-y: hidden;
   }
 `;
 
