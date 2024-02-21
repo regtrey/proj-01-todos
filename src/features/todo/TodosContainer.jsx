@@ -61,6 +61,7 @@ function TodosContainer() {
           placeholder="Add something todo..."
           value={todoInput}
           onChange={(e) => setTodoInput(e.target.value)}
+          isMaxed={isMaxed}
         />
         <CharLimit isMaxed={isMaxed}>
           {numChars} / {maxChars}

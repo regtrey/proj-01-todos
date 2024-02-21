@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const variant = {
+  maxed: css`
+    border: 1.5px solid red;
+
+    &:focus {
+      outline: none;
+    }
+  `,
+};
 
 export const Input = styled.input`
   height: 100%;
@@ -8,6 +18,8 @@ export const Input = styled.input`
   border-radius: 12px;
   font-size: 2.5rem;
   padding: 0 3.5rem;
+
+  ${(props) => props.isMaxed && variant.maxed}
 
   &::placeholder {
     color: var(--color-grey-600);

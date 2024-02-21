@@ -15,14 +15,17 @@ const GlobalStyles = createGlobalStyle`
         --color-grey-800:#1f2937;
 
         /* Brand */
-        --color-brand-50:#fff1f2;
-        --color-brand-100:#ffe4e6;
-        --color-brand-200:#fecdd3;
-        --color-brand-300:#fda4af;
-        --color-brand-400:#fb7185;
-        --color-brand-500:#f43f5e;
-        --color-brand-600:#e11d48;
-        --color-brand-700:#be123c;
+        --color-brand-50: #eff6ff;
+        --color-brand-100: #dbeafe;
+        --color-brand-200: #bfdbfe;
+        --color-brand-300: #93c5fd;
+        --color-brand-400: #60a5fa;
+        --color-brand-500: #3b82f6;
+        --color-brand-600: #2563eb;
+        --color-brand-700: #1d4ed8;
+        --color-brand-800: #1e40af;
+        --color-brand-900: #1e3a8a;
+        --color-brand-950: #172554;
     }
 
     *, 

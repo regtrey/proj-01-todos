@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { memo } from 'react';
 
 const StyledTodosContainer = styled.div`
   min-height: max-content;
-  max-height: 33.5rem;
+  /* max-height: 33.5rem; */
+  max-height: 38rem;
   width: 100rem;
   border-radius: 12px;
   display: flex;
@@ -20,8 +20,8 @@ const StyledTodosContainer = styled.div`
   }
 `;
 
-const Todos = memo(function Todos({ todos, render }) {
+function Todos({ todos, render }) {
   return <StyledTodosContainer>{todos.map(render)}</StyledTodosContainer>;
-});
+}
 
 export default Todos;

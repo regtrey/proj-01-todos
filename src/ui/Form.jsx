@@ -8,7 +8,6 @@ export const Form = styled.form`
   position: relative;
 
   @media (max-width: 768px) {
-    /* background-color: green; */
     height: max-content;
     width: 90vw;
     display: flex;

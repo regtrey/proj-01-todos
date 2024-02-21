@@ -6,7 +6,7 @@ import Heading from './ui/Heading';
 
 const StyledAppLayout = styled.main`
   height: 100dvh;
-  padding-top: 10rem;
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
