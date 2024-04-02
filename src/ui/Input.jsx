@@ -25,7 +25,12 @@ export const Input = styled.input`
     color: var(--color-grey-600);
   }
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 850px) {
+    width: 90vw;
+    padding: 0 2.5rem;
+  }
+
+  @media screen and (max-width: 767px) {
     height: 5rem;
     width: 100%;
     border-radius: 8px;

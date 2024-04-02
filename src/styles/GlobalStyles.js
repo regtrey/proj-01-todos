@@ -54,11 +54,6 @@ const GlobalStyles = createGlobalStyle`
       outline-offset: 1.5px;
     }
 
-    /* input:focus {
-      outline: 2px solid var(--color-grey-500);
-      outline-offset: 1.5px;
-    } */
-
     button:has(svg):focus {
         outline: none;
     }

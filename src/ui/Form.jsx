@@ -7,13 +7,13 @@ export const Form = styled.form`
   gap: 2rem;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 850px) {
     height: max-content;
     width: 90vw;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 3.5rem;
+    gap: 4rem;
     position: relative;
-    margin-top: 1.5rem;
   }
 `;

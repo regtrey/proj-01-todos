@@ -4,7 +4,7 @@ const StyledTodo = styled.div`
   min-height: 8rem;
   width: 100%;
   background-color: var(--color-brand-50);
-  color: var(--color-brand-400);
+  color: var(--color-brand-500);
   border-radius: 12px;
   padding: 0 3.5rem;
   display: flex;
@@ -12,14 +12,20 @@ const StyledTodo = styled.div`
   justify-content: space-between;
   font-size: 2.5rem;
 
-  @media (max-width: 768px) {
-    min-height: 10rem;
-    border-radius: 8px;
-    padding: 2rem 1.5rem;
-    font-size: 2rem;
+  @media screen and (max-width: 850px) {
+    border-radius: 10px;
+    padding: 1.5rem 2.5rem;
+    font-size: 3rem;
     overflow-x: hidden;
     overflow-wrap: break-word;
     hyphens: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    min-height: 7.5rem;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
   }
 `;
 

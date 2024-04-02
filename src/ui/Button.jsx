@@ -24,7 +24,7 @@ const types = {
       color: var(--color-brand-600);
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 850px) {
       width: 100%;
     }
   `,
@@ -56,7 +56,19 @@ export const Button = styled.button`
     }
   }
 
-  @media (max-width: 768px) {
+  &:has(svg) {
+    height: 3rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    height: 12rem;
+  }
+
+  @media screen and (max-width: 799px) {
+    height: 10rem;
+  }
+
+  @media screen and (max-width: 767px) {
     height: 5rem;
     border-radius: 8px;
     font-size: 2rem;

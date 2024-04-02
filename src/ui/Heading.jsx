@@ -7,9 +7,13 @@ const StyledHeading = styled.h1`
   font-weight: 700;
   letter-spacing: -2.5px;
 
-  @media (max-width: 768px) {
-    width: 80vw;
+  @media screen and (max-width: 850px) {
+    width: 90vw;
     font-size: 7rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 5rem;
   }
 `;
 
