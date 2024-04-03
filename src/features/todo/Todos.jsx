@@ -11,6 +11,12 @@ const StyledTodosContainer = styled.div`
   gap: 0.5rem;
   overflow-y: scroll;
 
+  @media screen and (min-width: 1280px) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 850px) {
     max-height: 33rem;
     width: 90vw;

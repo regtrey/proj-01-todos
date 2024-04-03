@@ -13,9 +13,6 @@ const StyledAppLayout = styled.main`
   justify-content: flex-start;
   gap: 1.5rem;
 
-  @media screen and (max-width: 850px) {
-  }
-
   @media screen and (max-width: 767px) {
     padding: 5rem 0 2.5rem;
     gap: 3rem;
